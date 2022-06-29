@@ -1,0 +1,9 @@
+- name: Installing GNU Screen
+  apt:
+    name: screen
+    state: present
+
+- name: Screen (console multiplexer) configuration
+  copy:
+    src: etc/screenrc
+    dest: /etc/screenrc
